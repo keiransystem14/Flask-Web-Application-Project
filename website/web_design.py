@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import Blueprint, render_template
 
 web_design = Blueprint('web_design', __name__)
 
@@ -12,4 +12,4 @@ Whatever is inside the defined function called home will run on the main webpage
 @web_design.route('/')
 
 def home():
-    return "<h1>Hello Keiran</h1>" 
+    return render_template("home.html")
