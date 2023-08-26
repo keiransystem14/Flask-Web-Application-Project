@@ -1,4 +1,5 @@
 from flask import Blueprint, render_template
+from flask_login import login_required, current_user
 
 web_design = Blueprint('web_design', __name__)
 
@@ -10,6 +11,6 @@ Whatever is inside the defined function called home will run on the main webpage
 """
 
 @web_design.route('/')
-
+@login_required
 def home():
     return render_template("home.html")
