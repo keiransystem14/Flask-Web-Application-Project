@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+from os import path
 
 # Initialize Database
 
@@ -23,3 +24,8 @@ def create_application():
 
     return app
 
+def create_database(application):
+
+    if not path('website/' + DB_NAME):
+        app_db.create_all(application=application)
+        print('Created Database!')
