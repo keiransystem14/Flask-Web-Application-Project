@@ -22,3 +22,4 @@ def create_application():
     app.register_blueprint(login_auth, url_prefix='/')
 
     return app
+
