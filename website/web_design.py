@@ -13,4 +13,4 @@ Whatever is inside the defined function called home will run on the main webpage
 @web_design.route('/')
 @login_required
 def home():
-    return render_template("home.html")
+    return render_template("home.html", user=current_user)
