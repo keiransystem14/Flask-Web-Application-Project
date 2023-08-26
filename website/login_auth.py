@@ -21,7 +21,7 @@ Flash library is used to flash an error message when the user doesn't meet the s
 """
 
 @login_auth.route('/login', methods=['GET', 'POST'])
-def login():
+def login(): 
     return render_template("login.html", text="Testing")
 
 @login_auth.route('/logout')
@@ -32,13 +32,13 @@ def logout():
 def signup():
     if request.method == 'POST':
         email = request.form.get('email')
-        firstname = request.form.get('firstname')
+        first_name = request.form.get('firstname')
         password1 = request.form.get('password1')
         password2 = request.form.get('password2')
 
         if len(email) < 4:
             flash('Email must be greater than 4 characters', category='error')
-        elif len(firstname) < 2:
+        elif len(first_name) < 2:
             flash('The firstname must be greater than 1 characters', category='error')
         elif password1 != password2:
             flash('The password must match', category='error')
@@ -46,7 +46,7 @@ def signup():
             flash('The password has to be greater than 6 characters', category='error')
         else:
             # Add user to database
-            new_user = User(email=email, firstname=firstname, password=generate_password_hash(password1, method='sha256'))
+            new_user = User(email=email, first_name=first_name, password=generate_password_hash(password1, method='sha256'))
             app_db.session.add(new_user)
             app_db.session.commit()
             flash('Account created!', category='success')
