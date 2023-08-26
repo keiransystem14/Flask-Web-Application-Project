@@ -10,7 +10,7 @@ Create two class for objects called Note and User and then associate the note wi
 
 class Note(app_db.Model):
     id = app_db.Column(app_db.Integer, primary_key=True)
-    data = app_db.Column(app_db(10000))
+    data = app_db.Column(app_db.String(10000)) #error with forgetting to include .String.
     date = app_db.Column(app_db.DateTime(timezone=True), default=func.now())
     user_id = app_db.Column(app_db.Integer,app_db.ForeignKey('user.id'))
 

@@ -22,10 +22,14 @@ def create_application():
     app.register_blueprint(web_design, url_prefix='/')
     app.register_blueprint(login_auth, url_prefix='/')
 
+    from .models import User, Note
+
+    create_database(app)
+
     return app
 
-def create_database(application):
+def create_database(app):
 
     if not path('website/' + DB_NAME):
-        app_db.create_all(application=application)
+        app_db.create_all(app=app)
         print('Created Database!')
