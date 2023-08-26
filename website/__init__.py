@@ -24,12 +24,22 @@ def create_application():
 
     from .models import User, Note
 
-    create_database(app)
+    with app.app_context():
+        app_db.create_all()
 
     return app
 
-def create_database(app):
 
-    if not path('website/' + DB_NAME):
-        app_db.create_all(app=app)
-        print('Created Database!')
+"""
+
+Removing this part of the code because it's not this is what's causing the errors. The reason why the errors exist is because Flask-SQLAlchemy 3 no longer supports the app argument in create_all
+function. 
+
+Flask-SQLAlchemy-3.0.5 is uninstalled and Flask-SQLAlchemy 2.5.0 is installed which did the fix but this will most likely not be a permenant fix depending on what we want to do with the
+website.
+
+"""
+# def create_database(app):
+#     if not path.exists('website/' + DB_NAME): #Syntax error by forgetting to include path.exists()
+#         app_db.create_all(app=app)
+#         print('Created Database!')
