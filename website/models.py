@@ -19,4 +19,4 @@ class User(app_db.Model, UserMixin):
     email = app_db.Column(app_db.String(150), unique=True)
     password = app_db.Column(app_db.String(150))
     first_name = app_db.Column(app_db.String(150)) 
-    notes = app_db.relationship('Note')
+    Notes = app_db.relationship('Note')
