@@ -12,7 +12,7 @@ DB_NAME = "account.db"
 def create_application():
     application = Flask(__name__)  #Represents the name of the file.
     application.config['SECRET_KEY'] = 'DKJSDKFJSLDKFKJDKJF'
-    application.config['SQLAlchemy_DATABASE_URI'] = f'sqlite://{DB_NAME}' #Error in line 15
+    application.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite://{DB_NAME}' #RuntimeError: Entered incorrect syntax - 'SQLAlchemy_DATABASE_URI'. Changed to 'SQLALCHEMY_DATABASE_URI'
 
     app_db.init_app(application)
     
