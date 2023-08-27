@@ -1,6 +1,6 @@
 # Flask-Web-Application-Project
 
-# What is the project about
+## What is the project about
 
 The project is about creating a website application that enables users like myself to create a To-Do-List or notes for tasks which I don't remember at all. 
 
