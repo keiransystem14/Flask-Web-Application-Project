@@ -2,21 +2,21 @@
 
 ## What is the purpose of this project
 
-The purpose of creating thr web application is create a task list that enables me to do my best in managing my workload. Also, it's an application which I can definitely use for any projects such as DevOps tools by using this application as an example.  
+The goal of making this web app is to have a task list that helps me manage my work efficiently. I can also use this app as a model for other projects, like DevOps tools.
 
 ## What your application does
 
-The project aims to design a website application that allows the users like myself to create a task list to increase knowledge of knowing what needs to be completed. This design also enables the users the ability to create a seperate task list for work related tasks and home related tasks by using different user accounts. The workflow of the user accounts is that they can first click on the "Sign-up" button as we know their account wouldn't exist on the database. After entering the details on the sign-up form below, it adds the details onto the database file named "accounts.db". 
+The project's goal is to create a website app that helps users like me make task lists for better organization. Users can have separate lists for work and home tasks with different accounts. To get started, users click "Sign-up," adding their details to the "accounts.db" database after filling out the form.
 
 ![image](https://github.com/keiransystem14/Flask-Web-Application-Project/assets/72732443/924b8bb7-7a71-4571-bf59-20341bcb1be8)
 
-Next, the user clicks on the login button and they enter the email address and password which they used on the sign-up page. Clicked on the login button and it displayed the homepage which was known as the task page below:
+Afterward, the user selects the login button and enters the email and password from the sign-up. This action leads to the homepage, referred to as the task page.
 
 ![image](https://github.com/keiransystem14/Flask-Web-Application-Project/assets/72732443/e1492ba7-bdf5-4377-936c-c708df2a2d9a)
 
 ![image](https://github.com/keiransystem14/Flask-Web-Application-Project/assets/72732443/4883acc2-d51a-4735-ac77-1b35cc5b6c8b)
 
-Inside the homepage, it gives the users the ability to add tasks that they want to accomplish throughout the day or week. This can be done by writing the task and then clicking on the add task button. 
+On the homepage, users can easily input tasks they need to complete within the day or week. They simply write the task and click "Add Task."
 
 ![Screenshot 2023-08-28 at 11 52 38](https://github.com/keiransystem14/Flask-Web-Application-Project/assets/72732443/d953c073-0c9e-4a51-a7dc-0d0c0f8ce852)
 
@@ -30,23 +30,23 @@ When a user needs to sign in to another user account to create a seperate task l
 
 ## Technologies used
 
-The following technologies used are:
+The technologies used include:
 
 * Python
-* HTML (Hyper-Text-Markup-Language)
+* HTML
 * JavaScript
 
-The reason why I used python is because it's an important skill for me to learn in the long-term. Also, I personally find writing python code/scripts interesting as I get the opportunity to explore different libaries. This project is the first time I am learning about python flask. 
+I chose Python because it's valuable for my long-term growth, and I enjoy exploring its libraries while coding. This project is my first encounter with Python Flask.
 
-HTML and JavaScript is a skill I have learned previously in Uxbridge college during HND Level 5 in Computing and it's a skill which is good to refresh on as that helped massively on how website applications are created.
+I previously learned HTML and JavaScript during my HND Level 5 in Computing at Uxbridge College. Refreshing these skills is important as they greatly contributed to my understanding of creating web applications.
 
 ## Challenges faced:
 
-The challenges I faced with this project is creating a function that helps me remnove a task from the list after adding it because I faced issues with the index.js file and also within the home.html itself with not accepting the syntax which is supported by python. 
+I encountered challenges while working on this project. One difficulty was creating a function to remove tasks from the list after adding them. I faced issues with the index.js file and also within the home.html, where the syntax supported by Python wasn't accepted.
 
 ## Potential improvements to the web application
 
-One of the improvements I want to focus on is migrating the backend from using SQLite to MySQL server. Eventually I want to migrate the entire web application into the cloud using different services and tools.
+I aim to enhance the project by shifting the backend from SQLite to MySQL server. Furthermore, I plan to move the entire web app to the cloud, utilizing various services and tools.
 
 
 
