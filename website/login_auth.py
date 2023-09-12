@@ -77,3 +77,6 @@ def signup():
     return render_template("signup.html", user=current_user)
 
 
+@login_auth.route('/requestpasswordreset', methods=['GET', 'POST']) 
+def rrequestpasswordreset():
+   return render_template('requestpasswordreset.html', user=current_user)
